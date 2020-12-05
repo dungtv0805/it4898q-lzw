@@ -25,11 +25,18 @@ public class LZWUtils {
 //				System.out.println(index + "sd");
 			} else {
 //				outComp.putN(oneCode);
-//				System.out.println(oneCode);
+				if(oneCode < 256) {
+					System.out.print((char) oneCode + " ");
+				}
+				if(oneCode >= 256) {
+					System.out.print(oneCode + " ");
+				}
+//				System.out.println();
+//				System.out.print(oneCode + " ");
 				
 				if (nextCode <= MAXCODE) {
 					history[index] = new LZWHistoryItem(nextCode++, oneCode, oneByte);
-					System.out.println(history[index].Code);
+//					System.out.println(history[index].Code);
 					oneCode = oneByte;
 				}
 			}
