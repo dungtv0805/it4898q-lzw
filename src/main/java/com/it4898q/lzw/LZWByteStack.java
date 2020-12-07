@@ -3,7 +3,7 @@ package com.it4898q.lzw;
 public class LZWByteStack {
 
 	private int[] ints;
-	private int counter = 0;
+	private int ctr = 0;
 
 	public LZWByteStack() {
 		this(4000);
@@ -14,10 +14,10 @@ public class LZWByteStack {
 	}
 
 	public void push(int bv) {
-		ints[counter++] = bv;
+		ints[ctr++] = bv;
 	}
 
 	public int pop() {
-		return ints[counter--];
+		return ints[--ctr];
 	}
 }
