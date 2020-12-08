@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: helloword
+Build-Jdk: 14.0.2
+Main-Class: com.it4898q.lzw.common
+Class-Path: .
+Created-By: Maven Integration for Eclipse
+
